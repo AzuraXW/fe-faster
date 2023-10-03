@@ -1,0 +1,10 @@
+[
+  {
+    "name": "fantastic-admin",
+    "url": "https://github.com/fantastic-admin/basic.git#main"
+  },
+  {
+    "name": "vue-element-admin",
+    "url": "https://github.com/PanJiaChen/vue-element-admin.git"
+  }
+]
