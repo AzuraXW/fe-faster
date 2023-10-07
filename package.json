@@ -4,7 +4,9 @@
   "description": "前端脚手架",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix lib/"
+    "prepare": "husky install",
+    "lint": "eslint --fix lib/**",
+    "lint-staged": "lint-staged"
   },
   "type": "module",
   "bin": {
@@ -29,6 +31,11 @@
   "devDependencies": {
     "eslint": "^8.51.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2"
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1"
+  },
+  "lint-staged": {
+    "*.js": "pnpm lint"
   }
 }
